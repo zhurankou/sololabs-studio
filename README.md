@@ -1,11 +1,6 @@
 
-  # Responsive Portfolio Website
+  # Portfolio
 
-  This is a code bundle for Responsive Portfolio Website. The original project is available at https://www.figma.com/design/7mlqR9cgiAa9Fh0wYbk8Kq/Responsive-Portfolio-Website.
+  Coming soon...
 
-  ## Running the code
-
-  Run `npm i` to install the dependencies.
-
-  Run `npm run dev` to start the development server.
-  
+   ©2025, Solo Labs, LLC
