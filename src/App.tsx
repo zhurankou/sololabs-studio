@@ -19,7 +19,7 @@ export default function App() {
 
           {/* Studio Name */}
           <div className="text-foreground text-lg font-medium -translate-y-1">
-            sololabs
+            solo labs
           </div>
         </div>
 
