@@ -1,48 +1,104 @@
-import { StickyNote } from "./components/StickyNote";
-import Logo from "./imports/Logo-12-215";
-
 export default function App() {
   return (
     <div
-      className="min-h-screen bg-background dotted-paper flex flex-col items-center justify-center p-8 gap-0 relative"
-      style={{ fontFamily: "Sono, monospace" }}
+      style={{
+        position: "relative",
+        minHeight: "100vh",
+        backgroundColor: "#f8e46f",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        fontFamily: '"Open Sans", sans-serif',
+      }}
     >
-      <div className="flex flex-col items-center gap-2 -translate-y-24">
-        <div className="w-[80px] h-[74px]">
-          <Logo />
-        </div>
-
-        {/* Studio Name */}
-        <div className="text-foreground text-lg font-medium -translate-y-1">
-          sololabs
-        </div>
-      </div>
-
-      {/* Projects Grid */}
-      <div className="w-full max-w-6xl flex flex-wrap justify-center gap-8 -mt-16">
-        <StickyNote
-          title="Coming soon..."
-          color="yellow"
-          rotation={-2}
-        />
-      </div>
-
-      {/* Introduction Text */}
-      <div className="text-foreground text-center px-4 max-w-xl mt-8">
-        Hey, my name is Alex, it is just me here, vibecoding
-        solo. Say{" "}
-        <a
-          href="mailto:hey@sololabs.studio"
-          className="hover:bg-sky-200 dark:hover:bg-sky-900 transition-all px-1 rounded"
+      {/* Centered content */}
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
+          gap: "24px",
+          width: "320px",
+        }}
+      >
+        {/* Logo */}
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            gap: "10px",
+            transform: "translateX(-8px)",
+          }}
         >
-          hey@sololabs.studio
-        </a>
+          <img
+            src="/logo.svg"
+            alt="Sololabs logo"
+            style={{ width: "88px", height: "88px", display: "block" }}
+          />
+          <p
+            style={{
+              fontWeight: 600,
+              fontSize: "40px",
+              lineHeight: "normal",
+              letterSpacing: "-2px",
+              color: "#000000",
+              textAlign: "center",
+              whiteSpace: "nowrap",
+            }}
+          >
+            Sololabs
+          </p>
+        </div>
+
+        {/* Description */}
+        <div
+          style={{
+            fontWeight: 400,
+            fontSize: "16px",
+            letterSpacing: "-0.7px",
+            color: "#000000",
+            textAlign: "center",
+            width: "100%",
+          }}
+        >
+          <p style={{ lineHeight: "normal", marginBottom: "6px" }}>
+            We are a digital product studio specializing in software design and
+            development.{" "}
+          </p>
+          <p style={{ lineHeight: "normal", marginBottom: "6px" }}>
+            Our services include product strategy, UX/UI design, prototyping,
+            design systems, and web/mobile development.
+          </p>
+          <p style={{ lineHeight: "normal", marginBottom: "6px" }}>&#8203;</p>
+          <p style={{ fontWeight: 600, lineHeight: "normal" }}>
+            <a
+              href="mailto:hey@sololabs.studio"
+              style={{ color: "inherit", textDecoration: "none" }}
+            >
+              hey@sololabs.studio
+            </a>
+          </p>
+        </div>
       </div>
 
-      {/* Copyright */}
-      <div className="absolute bottom-4 text-foreground opacity-40 text-base">
+      {/* Footer */}
+      <p
+        style={{
+          position: "absolute",
+          bottom: "32px",
+          width: "280px",
+          fontWeight: 400,
+          fontSize: "14px",
+          lineHeight: "normal",
+          letterSpacing: "-0.7px",
+          color: "#8e8e93",
+          textAlign: "center",
+        }}
+      >
         © 2025 Solo Labs, LLC
-      </div>
+      </p>
     </div>
   );
 }
