@@ -46,6 +46,7 @@ export default function App() {
               color: "#000000",
               textAlign: "center",
               whiteSpace: "nowrap",
+              transform: "translateX(-2px)",
             }}
           >
             Sololabs
